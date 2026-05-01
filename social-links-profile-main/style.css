@@ -1,0 +1,117 @@
+/* Google Fonts (Inter: 400, 600, 700) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  /*(Colors) */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+
+  /* (Typography) */
+  --font-main: 'Inter', sans-serif;
+  
+  /* (Font size) - 14px */
+  --fs-body: 0.875rem; 
+
+  /* (Font weights) */
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+
+
+body
+{
+    margin: 0;
+    font-family: var(--font-main);
+}
+
+.container
+{
+    background-color: var(--grey-900);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.user_card
+{
+    background-color: var(--grey-800);
+    max-width: 330px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.username
+{
+    margin-top: 1.5rem;
+    color: var(--white);
+    font-size: 1.25rem;
+    font-weight: var(--fw-semi-bold);
+}
+
+.avatar_picture
+{
+    border-radius: 50%;
+    width: 5.5rem;
+}
+
+.location
+{
+    color: var(--green);
+    margin-top: -0.5rem;
+    font-size: 0.875rem;
+    font-weight: var(--fw-semi-bold);
+}
+
+.description
+{
+    color: var(--white);
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: var(--fw-semi-bold);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.buttons
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.github_button, .LinkedIn_button, .twitter_button, .instagram_button, .frontend_mentor_button
+{
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 17rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.5rem;
+}
+
+footer
+{
+    margin-top: -1.5rem;
+    background-color: var(--grey-900);
+}
